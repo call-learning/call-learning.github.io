@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const ProjectImg = ({ filename, alt }) => (
   <StaticQuery
@@ -13,9 +13,7 @@ const ProjectImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 1366) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -27,8 +25,8 @@ const ProjectImg = ({ filename, alt }) => (
 
       if (!image) return null;
 
-      const imageFluid = image.node.childImageSharp.fluid;
-      return <Img alt={alt} fluid={imageFluid} />;
+      const imageFluid = getImage(image.node);
+      return <GatsbyImage alt={alt} image={imageFluid} />;
     }}
   />
 );
