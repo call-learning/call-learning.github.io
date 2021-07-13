@@ -37,7 +37,7 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Welcome to the other side of '}{' '}
-            <span className="text-color-main">{name || 'CALL Learning!'}</span>
+            <span className="text-color-main">{name || 'CALL Learning'}!</span>
             <br />
             {subtitle || "Expertise technique LMS Open Source."}
           </h1>

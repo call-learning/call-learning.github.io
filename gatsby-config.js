@@ -21,6 +21,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "call-learning-io-site",
+        protocol: "https",
+        hostname: "call-learning.io",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `CALL Learning`,

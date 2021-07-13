@@ -26,7 +26,7 @@ const AboutImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFixed = getImage(image.node);
-      return <GatsbyImage className="rounded-pill shadow-lg" alt={alt} image={imageFixed} objectPosition="center top" />;
+      return <GatsbyImage className="img-fluid" alt={alt} image={imageFixed} objectPosition="center top" />;
     }}
   />
 );
