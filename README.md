@@ -1,266 +1,133 @@
-# Gatsby Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobidev/gatsby-simplefolio?color=blue)](https://github.com/cobidev/gatsby-simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobidev/gatsby-simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobidev/gatsby-simplefolio)
+# CALL Learning — Astro Portfolio
 
-## A clean, beautiful and responsive portfolio template for Developers
-
-<h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Gatsby Simplefolio" width="600px" />
-  <br>
-</h2>
-
-## Features
-
-⚡️ Modern UI Design + Reveal Animations\
-⚡️ One Page Layout built with React\
-⚡️ Styled with Bootstrap v4.3 + Custom SCSS\
-⚡️ Fully Responsive\
-⚡️ Configurable color scheme\
-⚡️ Image optimization with Gatsby\
-⚡️ Easy site customization\
-⚡️ Well organized documentation
-
-To view a demo example, **[click here](https://gatsby-simplefolio.netlify.com/)**\
-To view a live example, **[click here](https://cobidev.com/)**
+A modern one-page portfolio built with [Astro](https://astro.build/).  
+Features:
+- Hero with gradient diagonal background and CTA
+- Projects grid with “See Live” & “Source Code” buttons
+- Sticky navigation & smooth scroll
+- Responsive design, no JavaScript unless needed
+- Favicon, basic SEO meta, PWA manifest
 
 ---
 
-## Getting Started 🚀
+## 🚀 Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites 📋
-
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.\
-Also you need to have installed [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/)
-
-```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
-git@2.17.1 or higher
-gatsby-cli@2.8.22 or higher
+### Install dependencies
+```bash
+npm install
 ```
 
-Also, you can use [Yarn](https://yarnpkg.com/) instead of NPM ☝️
-
+### Run in dev mode
+```bash
+npm run dev
 ```
-yarn@v1.21.1 or higher
+Your site will be available at [http://localhost:4321](http://localhost:4321).
+
+### Build for production
+```bash
+npm run build
+```
+The static site is generated in the `dist/` folder.
+
+### Preview production build locally
+```bash
+npm run preview
 ```
 
 ---
 
-## How To Use 🔧
+## 📝 Project Structure
 
-From your command line, first clone Simplefolio:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/cobidev/gatsby-simplefolio
-
-# Go into the repository
-$ cd gatsby-simplefolio
-
-# Remove current origin repository
-$ git remote remove origin
 ```
-
-Then you can install the dependencies either using NPM or Yarn:
-
-Using NPM:
-
-```bash
-# Install dependencies
-$ npm install
-
-# Start development server
-$ npm run develop
+├── public/              # static assets (favicon, images, manifest)
+│   ├── favicon.svg
+│   ├── images/
+│   └── icons/
+├── src/
+│   ├── content/
+│   │   └── data.json    # Main site content (hero, about, projects, contact, footer)
+│   ├── components/      # Nav, Section, Footer
+│   ├── pages/
+│   │   └── index.astro  # Main one-page site
+│   └── styles/
+│       └── global.css   # Custom styles & color palette
+├── package.json
+├── astro.config.mjs
+└── README.md
 ```
-
-Using Yarn:
-
-```bash
-# Install dependencies
-$ yarn
-
-# Start development server
-$ yarn develop
-```
-
-**NOTE**:
-If your run into issues installing the dependencies with NPM, use this command:
-
-```bash
-# Install dependencies with all permissions
-$ sudo npm install --unsafe-perm=true --allow-root
-```
-
-Once your server has started, go to this url `http://localhost:8000/` and you will see the website running on a Development Server:
-
-<h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.png" alt="Gatsby Simplefolio" width="100%">
-</h2>
 
 ---
 
-## Instructions:
+## 🎨 Customization
 
-### Step 1 - STRUCTURE
-
-Go to `/src/mock/data.js` and fill your information, they are 5 objects:
-
-### Hero Section
-
-```javascript
-export const heroData = {
-  title: '', // Hello, my name is
-  name: '', // John
-  subtitle: '', // I'm the Unknown Developer.
-  cta: '', // Know more
-};
-```
-
-### About Section
-
-**_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
-
-```javascript
-export const aboutData = {
-  img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
-};
-```
-
-### Projects Section
-
-**_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
-
-Put as many projects object you want inside the `array`.
-
-```javascript
-export const projectsData = [
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  ...
-];
-```
-
-### Contact Section
-
-```javascript
-export const contactData = {
-  cta: '', // call to action text for the contact section
-  btn: '', // text inside the button
-  email: '',
-};
-```
-
-### Footer Section
-
-You can remove or add as many you social-media icons you want.\
-Just put an object with the corresponding values inside the networks `array` or remove it from there.
-
-```javascript
-export const footerData = {
-  networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: '', // your twitter url
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '', // your codepen url
-    },
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: '', // your linkedin url
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: '', // your github url
-    },
-  ],
-};
-```
-
-### Required - Disable GitHub buttons
-
-Set `isEnabled` to `false` once you finish setup your portfolio.\
-By setting to `false` it will hide the GitHub stars/fork buttons
-
-```javascript
-export const githubButtons = {
-  isEnabled: true, // true is the default value
-};
-```
-
-### Step 2 - STYLES
-
-Change the color theme of the website ( choose 2 colors to create a gradient ):
-
-Go to `src/styles/abstracts/_variables.scss` and only change the values on this classes `$main-color` and `$secondary-color` to your prefered HEX color
-
-```scss
-// Default values
-$main-color: #02aab0;
-$secondary-color: #00cdac;
-```
-
-**_Note_**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#BrightVault)
+- **Content:** edit `src/content/data.json`
+    - `hero`: title, subtitle, CTA
+    - `about`: description, resume, image
+    - `projects`: title, info, info2, image, url, repo
+    - `contact`: email
+    - `footer`: networks (social links)
+- **Images:** add/edit files in `public/images/` and reference them in `data.json`
+- **Styles:** tweak variables in `src/styles/global.css`:
+  ```css
+  :root {
+    --accent: #ef4444;   /* primary CTA (red) */
+    --accent-2: #0ea5a3; /* secondary CTA (teal) */
+    --fg: #0f172a;       /* text */
+    --muted: #6b7280;    /* muted text */
+  }
+  ```
 
 ---
 
-## Deployment 📦
+## ☁️ Deploy to AWS S3
 
-Once you have done with your setup. You need to put your website online!
+### 1. Build
+```bash
+npm run build
+```
 
-I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
+### 2. Sync to S3
+```bash
+aws s3 sync ./dist s3://your-bucket-name --delete --profile your-aws-profile
+```
 
-## Others versions 👥
+### 3. Enable static hosting
+- In AWS Console → S3 → your bucket → Properties → **Static website hosting**
+- Index document: `index.html`
+- Error document: `404.html` (optional)
 
-[Simplefolio](https://github.com/cobidev/simplefolio) by [Jacobo Martinez](https://github.com/cobidev)\
-[Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
+### 4. Make files public
+Attach a bucket policy like:
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*"
+    }
+  ]
+}
+```
 
-## Technologies used 🛠️
+### 5. (Optional) CloudFront + custom domain
+- Create a CloudFront distribution with the S3 bucket as origin
+- Add SSL cert via ACM
+- Point your DNS to CloudFront
 
-- [Gatsby](https://www.gatsbyjs.org/) - Static Site Generator
-- [GraphQL](https://graphql.org/) - Query language for APIs
-- [React](https://es.reactjs.org/) - Front-End JavaScript library
-- [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Front-End UI library
-- [Sass](https://sass-lang.com/documentation) - CSS extension language
+---
 
-## Authors
+## 📦 Useful Plugins
 
-- **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
+- [`@astrojs/image`](https://docs.astro.build/en/guides/integrations-guide/image/) — optimize images
+- [`@astrojs/tailwind`](https://docs.astro.build/en/guides/integrations-guide/tailwind/) — Tailwind CSS support
+- [`@astrojs/sitemap`](https://docs.astro.build/en/guides/integrations-guide/sitemap/) — sitemap.xml
+- [`astro-icon`](https://github.com/natemoo-re/astro-icon) — easy icons
 
-## Status
+---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2365af6f-820a-4fb8-83e6-69a66f686dfe/deploy-status)](https://app.netlify.com/sites/gatsby-simplefolio/deploys)
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments 🎁
-
-I was motivated to create this project because I wanted to contribute on something useful for the dev community, thanks to [ZTM Community](https://github.com/zero-to-mastery) and [Andrei](https://github.com/aneagoie)
+## 📄 License
+MIT — feel free to use and adapt.

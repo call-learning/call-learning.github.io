@@ -23,7 +23,8 @@ Exemple strategy:
 
 # Deployment
 
-Once AWS CLI has the right config:
+Assuming you have the AWS CLI installed and configured with the necessary permissions, you can deploy your Astro site to S3 using the following commands:
 
-    npm run build && npm run deploy
+    aws sts get-caller-identity --profile calllearning-io
 
+    aws s3 sync ./dist s3://call-learning-io-site --profile calllearning-io --acl public-read --delete

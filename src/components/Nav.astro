@@ -1,0 +1,23 @@
+---
+const links = [
+  { href: "#about", label: "À propos" },
+  { href: "#projects", label: "Projets" },
+  { href: "#contact", label: "Contact" },
+];
+---
+<nav class="navbar">
+  <div class="inner container">
+    <a href="#top" class="logo">CALL Learning</a>
+    <ul>
+      {links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+    </ul>
+  </div>
+</nav>
+<style>
+.navbar { position: sticky; top:0; backdrop-filter: blur(6px); background: rgba(255,255,255,.6); border-bottom:1px solid rgba(0,0,0,.06); z-index: 50; }
+.navbar .inner { display:flex; align-items:center; justify-content:space-between; padding:.6rem 1.25rem; }
+.navbar a.logo { font-weight:800; letter-spacing:.3px; text-decoration:none; color:#0f172a; }
+.navbar ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.navbar ul a { color:#0f172a; text-decoration:none; padding:.35rem .6rem; border-radius:.6rem; }
+.navbar ul a:hover { background: rgba(0,0,0,.05); }
+</style>
