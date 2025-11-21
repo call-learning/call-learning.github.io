@@ -1,0 +1,55 @@
+---
+import generalData from '../content/data.json';
+import teamData from '../content/equipe.json';
+import Nav from '../components/Nav.astro';
+import Section from '../components/Section.astro';
+import Footer from '../components/Footer.astro';
+
+const { footer = {} } = generalData;
+const team = teamData;
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>{team.title}</title>
+    <meta name="description" content={team.intro} />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <Nav />
+
+    <header class="hero hero-full">
+      <div class="hero-center" style="width:100vw; display:flex; flex-direction:column; align-items:center; text-align:center;">
+        <h1>{team.title}</h1>
+        <p class="lead" style="max-width:700px;">{team.intro}</p>
+      </div>
+    </header>
+
+    <Section title="Une équipe spécialisée">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:1.5rem;">
+        {team.members.map((member) => (
+          <article class="card">
+            {member.photo && (
+              <img
+                src={`/images/${member.photo}`}
+                alt={member.name}
+                loading="lazy"
+                style="width:100%; max-height:220px; object-fit:cover;"
+              />
+            )}
+            <div class="inner">
+              <h3>{member.name}</h3>
+              <p class="muted">{member.role}</p>
+              <p>{member.bio}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </Section>
+
+    <Footer {...footer} />
+  </body>
+</html>
+

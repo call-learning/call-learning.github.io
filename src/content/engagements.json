@@ -1,0 +1,54 @@
+{
+  "title": "Nos engagements & nos garanties",
+  "intro": "CALL Learning s’engage à fournir des solutions LMS robustes, sécurisées, performantes et durables, en totale transparence avec ses clients.",
+  "summaryTitle": "Nos 9 engagements clés",
+  "items": [
+    {
+      "title": "Engagement de qualité",
+      "body": "Chaque développement est réalisé avec un haut niveau d’exigence technique et pédagogique. Nous appliquons des bonnes pratiques de développement, documentons nos livrables et construisons des solutions fiables, stables et pensées pour durer."
+    },
+    {
+      "title": "Engagement de sécurité",
+      "body": "La sécurité est intégrée dès la conception : durcissement des configurations, gestion robuste des identités (CAS, LDAP, SAML2, OAuth2), conformité RGPD, supervision proactive et respect strict des standards de sécurité applicative."
+    },
+    {
+      "title": "Engagement de performance",
+      "body": "Nous concevons des architectures optimisées : cache Redis, requêtes SQL allégées, thèmes et plugins légers, infrastructures scalables (Kubernetes, clusters), monitoring temps réel et optimisation continue pour garantir rapidité et stabilité."
+    },
+    {
+      "title": "Engagement de continuité de service",
+      "body": "Nous nous engageons à respecter les GTI/GTR définis au contrat, avec une gestion structurée des incidents, une priorisation claire, une communication transparente et des procédures d’escalade internes pour garantir un rétablissement rapide."
+    },
+    {
+      "title": "Engagement d’évolutivité",
+      "body": "Nos plateformes sont modulaires, maintenables et extensibles. Nous respectons les standards officiels et concevons des solutions capables d’évoluer sans dette technique, avec ajout simple de nouvelles fonctionnalités, modules ou services."
+    },
+    {
+      "title": "Engagement de transparence",
+      "body": "Nous assurons un suivi clair : reporting d’avancement, partage des décisions, accès au code source, documentation technique et utilisateur, et gestion de projet ouverte (GitHub, GitLab, outils de suivi)."
+    },
+    {
+      "title": "Engagement d’accompagnement durable",
+      "body": "Nous travaillons dans une logique de partenariat long terme. Audit, conseil, formation, transfert de compétences, assistance au déploiement et à la montée en charge : nous accompagnons chaque étape du projet."
+    },
+    {
+      "title": "Engagement Open Source",
+      "body": "CALL Learning contribue activement à l’écosystème Open Source en publiant des thèmes et plugins libres, en participant à la communauté Moodle™ et en privilégiant des technologies pérennes et auditables. Vous restez totalement maître de vos données et de votre infrastructure."
+    },
+    {
+      "title": "Engagement UX & pédagogie",
+      "body": "Nous concevons des plateformes intuitives et adaptées aux usages pédagogiques : navigation fluide, cohérence graphique, prise en compte de l’accessibilité (RGAA si demandé), expérience optimisée pour les étudiants, enseignants et administrateurs."
+    }
+  ],
+  "summary": [
+    "Fiabilité des livrables",
+    "Sécurité renforcée & conformité RGPD",
+    "Performance et haute disponibilité",
+    "Respect des délais GTI / GTR",
+    "Plateforme évolutive et maintenable",
+    "Transparence totale dans le pilotage",
+    "Accompagnement long terme",
+    "Solutions 100 % Open Source",
+    "UX moderne et centrée sur l’apprentissage"
+  ]
+}

@@ -1,0 +1,60 @@
+---
+import generalData from '../content/data.json';
+import engagementsData from '../content/engagements.json';
+import Nav from '../components/Nav.astro';
+import Engagement from '../components/Engagement.astro';
+import Footer from '../components/Footer.astro';
+
+const engagements = engagementsData;
+const { footer = {} } = generalData;
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>{engagements.title}</title>
+    <meta
+      name="description"
+      content={engagements.metaDescription || engagements.intro || engagements.title}
+    />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#4f46e5" />
+  </head>
+  <body>
+    <Nav />
+
+    <header class="hero hero-full">
+      <div
+        class="hero-center"
+        style="width:100vw; display:flex; flex-direction:column; align-items:center; text-align:center;"
+      >
+        <h1>{engagements.title}</h1>
+        {engagements.intro && (
+          <p class="lead" style="max-width:700px;">
+            {engagements.intro}
+          </p>
+        )}
+      </div>
+    </header>
+
+    {engagements.items &&
+      engagements.items.map((item, index) => (
+        <Engagement title={`${index + 1}. ${item.title}`}>
+          <p>{item.body}</p>
+        </Engagement>
+      ))}
+
+    {engagements.summary && (
+      <Engagement title={engagements.summaryTitle || 'Nos garanties en résumé'}>
+        <ul style="padding-left:1rem; line-height:1.8;">
+          {engagements.summary.map((line) => (
+            <li>{line}</li>
+          ))}
+        </ul>
+      </Engagement>
+    )}
+
+    <Footer {...footer} />
+  </body>
+</html>

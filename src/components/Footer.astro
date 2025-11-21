@@ -7,7 +7,7 @@ const year = new Date().getFullYear();
     {networks.length > 0 && (
       <p>
         {networks.map((n) => (
-          <a class="badge" style="margin-right:.5rem" href={n.url} target="_blank" rel="noopener">{n.name}</a>
+          <a class="badge" href={n.url} target="_blank" rel="noopener">{n.name}</a>
         ))}
       </p>
     )}

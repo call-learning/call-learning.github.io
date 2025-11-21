@@ -1,0 +1,76 @@
+{
+  "projects": [
+    {
+      "img": "imt-projet.jpg",
+      "title": "La pédagothèque numérique de l’IMT",
+      "info": "Une solution complète dédiée au partage des ressources : thème graphique, catalogue, mur pédagogique et outils collaboratifs.",
+      "info2": "Elle facilite la diffusion inter-cours et le transfert de contenus grâce au bloc Sharing Cart, pour une meilleure mutualisation pédagogique.",
+      "url": "https://pedagotheque.imt.fr/local/resourcelibrary/",
+      "repo": "https://github.com/call-learning/moodle-theme_imtpn"
+    },
+    {
+      "img": "eve-theme.jpg",
+      "title": "EVE – plateforme de formation initiale de l’ENVA",
+      "info": "Un thème Moodle moderne, responsive et compatible Boost/Moodle 4.5, pensé pour simplifier l’accès à l’ensemble des formations.",
+      "url": "https://eve.vet-alfort.fr/",
+      "repo": "https://github.com/call-learning/moodle-theme_enva"
+    },
+    {
+      "img": "cveto-projet.jpg",
+      "title": "Concours Vétérinaire Post-bac 2024 – Moodle",
+      "info": "Développement d’une plateforme nationale intégrant pages statiques, contenus officiels et questionnaires Parcoursup.",
+      "url": "https://exams.concours-veto-postbac.fr/",
+      "repo": "https://github.com/call-learning/moodle-theme_envf"
+    },
+    {
+      "img": "cveto-projet-wordpress.jpg",
+      "title": "Concours Vétérinaire Post-bac 2024 – WordPress",
+      "info": "Un site vitrine informatif et administrable, destiné à guider efficacement les candidats et leurs familles.",
+      "url": "https://concours-veto-postbac.fr/"
+    },
+    {
+      "img": "cveto-projet-moodle.png",
+      "title": "Exams – Concours Vétérinaire Post-bac 2022 – Moodle",
+      "info": "Plateforme d’examen basée sur Moodle et adossée à une infrastructure Kubernetes redondée, optimisée pour un trafic national et des contraintes métier fortes.",
+      "info2": "Architecture multi-frontaux avec équilibrage de charge, Redis pour le cache applicatif et les sessions, supervision avancée et procédures pour garantir la continuité de service pendant les épreuves.",
+      "url": "https://exam.concours-veto-postbac.fr/"
+    },
+    {
+      "img": "cveto-projet-questionnaire.jpg",
+      "title": "Autoévaluation des compétences – H5P",
+      "info": "Un module H5P permettant aux candidats d’évaluer leurs compétences transversales et d’alimenter leur dossier.",
+      "info2": "Intégration Moodle complète, synthèses visuelles et compatibilité Open Badges.",
+      "url": "https://www.concours-veto-postbac.fr/concours/questionnaire-residants/",
+      "repo": "https://github.com/call-learning/H5P.ConcoursVeto"
+    },
+    {
+      "img": "ressouces-num.jpg",
+      "title": "Ressources Numériques HESAM – Soft Skills",
+      "info": "Plateforme dédiée à l’autopositionnement sur les soft skills et à l’accès à des ressources numériques.",
+      "info2": "Attribution d’Open Badges et suivi détaillé des compétences.",
+      "repo": "https://github.com/call-learning/H5P.SoftSkills.H5P"
+    },
+    {
+      "img": "compet-vet-suivi.jpg",
+      "title": "CompetVetSuivi – Suivi des compétences",
+      "info": "Outil Moodle permettant de suivre l’évolution des compétences des étudiants vétérinaires sur plusieurs années.",
+      "info2": "Un bloc dédié permet à chaque étudiant de visualiser sa progression en temps réel.",
+      "repo": "https://github.com/call-learning/moodle-local_competvetsuivi"
+    },
+    {
+      "img": "compet-vet-eval.jpg",
+      "title": "CompetVetEval – Évaluation clinique",
+      "info": "Module Moodle complété d’une application mobile pour collecter et analyser les observations cliniques.",
+      "info2": "Développé en Ionic, synchronisé via Webservices et offrant des synthèses automatisées.",
+      "repo": "https://github.com/call-learning/competVetEval"
+    },
+    {
+      "img": "savoir-ensam.jpg",
+      "title": "Thème Moodle – Arts et Métiers (ENSAM)",
+      "info": "Modernisation complète du thème Moodle : navigation simplifiée, accès rapide aux ressources, UX homogène.",
+      "info2": "Catalogue libre accès et tableau de bord optimisé pour enseignants et étudiants.",
+      "url": "https://savoir.ensam.eu/moodle/",
+      "repo": "https://github.com/call-learning/moodle-theme_savoir"
+    }
+  ]
+}

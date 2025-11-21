@@ -1,97 +1,30 @@
 {
   "hero": {
-    "generaltitle": "Welcome to the other side of CALL Learning!",
-    "generalsubtitle": "Expertise technique LMS Open Source",
-    "title": "CALL Learning – L'expertise  Moodle™ & Open edX™ à votre service",
+    "generaltitle": "CALL Learning – L’expertise LMS Open Source au service de vos projets stratégiques",
+    "generalsubtitle": "Solutions robustes, performantes et conçues pour durer",
+    "title": "CALL Learning – L'expertise Moodle™ & Open edX™ à votre service",
     "name": "CALL Learning",
-    "subtitle": "De la conception pédagogique au développement sur-mesure, nous créons des solutions LMS Open Source adaptées à vos besoins.",
+    "subtitle": "De la conception pédagogique au développement sur-mesure, nous créons des plateformes Open Source fiables, évolutives et centrées sur les usages.",
     "cta": {
-      "label": "Discutons de votre projet...",
+      "label": "Discutons de votre projet…",
       "url": "#contact"
     }
   },
+
   "about": {
-    "description": "CALL Learning, c’est une équipe de passionnés qui utilise au quotidien les plateformes qu’elle développe. Notre philosophie : le ‘dogfooding’ – utiliser nous-mêmes nos solutions pour comprendre et résoudre les problèmes réels des formateurs et des étudiants.\n\nNous travaillons exclusivement avec des solutions Open Source (Moodle™, Open edX™) et contribuons activement à leur développement. Grâce à cette approche, nous combinons expertise technique et savoir-faire pédagogique. De grandes écoles et universités comme l’ENVA, l’IMT ou les Arts et Métiers nous font déjà confiance.",
-    "resume": "Experts en plateformes Open Source pour l’apprentissage numérique, nous vous accompagnons de l’idée au déploiement.",
+    "description": "CALL Learning réunit une équipe d’experts qui conçoivent, développent et opèrent des plateformes d’apprentissage Open Source (Moodle™, Open edX™).<br>Nous utilisons au quotidien les solutions que nous déployons, ce qui garantit une approche pragmatique, une exigence élevée en qualité logicielle et une capacité d’amélioration continue.<br>Nous accompagnons déjà des institutions telles que l’ENVA, l’IMT ou les Arts et Métiers, avec des solutions éprouvées, sécurisées et évolutives.<br>Notre engagement : transformer vos enjeux pédagogiques et techniques en solutions opérationnelles, fiables et durables.",
+    "resume": "De l’expression du besoin au déploiement clé-en-main, nous vous accompagnons sur la conception pédagogique, le développement spécifique, l’hébergement, l’optimisation des performances et le maintien en conditions opérationnelles.",
     "img": "dog.png"
   },
-  "projects": [
-    {
-      "img": "imt-projet.jpg",
-      "title": "La pédagothème numérique de l'IMT",
-      "info": "Un thème, un mur pédagogique pour partager des ressources, un catalogue et des pages de cours.",
-      "info2": "Ce projet favorise le partage inter-cours et l’enrichissement collaboratif. Grâce au bloc ‘sharing cart’, les enseignants peuvent copier-coller facilement des activités d’un cours à l’autre.",
-      "url": "https://pedagotheque.imt.fr/local/resourcelibrary/",
-      "repo": "https://github.com/call-learning/moodle-theme_imtpn"
-    },
-    {
-      "img": "eve-theme.jpg",
-      "title": "EVE – la plateforme de formation initiale de l'ENVA",
-      "info": "Un thème Moodle compatible Boost et Moodle 4.5, pensé pour rassembler toutes les formations dans un menu central clair et intuitif.",
-      "url": "https://eve.vet-alfort.fr/",
-      "repo": "https://github.com/call-learning/moodle-theme_enva"
-    },
-    {
-      "img": "cveto-projet.jpg",
-      "title": "Concours vétérinaire Post-bac 2024 – Moodle",
-      "info": "Un site complet pour gérer un processus national : informations officielles, pages statiques et questionnaires Parcoursup intégrés.",
-      "url": "https://exams.concours-veto-postbac.fr/",
-      "repo": "https://github.com/call-learning/moodle-theme_envf"
-    },
-    {
-      "img": "cveto-projet-wordpress.jpg",
-      "title": "Concours vétérinaire Post-bac 2024 – WordPress",
-      "info": "Un site vitrine permettant de communiquer efficacement auprès des candidats avec des pages dynamiques et administrables.",
-      "url": "https://concours-veto-postbac.fr/"
-    },
-    {
-      "img": "cveto-projet-questionnaire.jpg",
-      "title": "Autoévaluation des compétences – Concours vétérinaire",
-      "info": "Un questionnaire H5P d’autoévaluation intégré dans Moodle, permettant aux candidats d’évaluer leurs soft skills et de compléter leur dossier.",
-      "url": "https://www.concours-veto-postbac.fr/concours/questionnaire-residants/",
-      "repo": "https://github.com/call-learning/H5P.ConcoursVeto"
-    },
-    {
-      "img": "ressouces-num.jpg",
-      "title": "Les Ressources Numériques HESAM – Soft Skills",
-      "info": "Une plateforme dédiée à l’autopositionnement sur les compétences transversales et à l’accès à des ressources pour enrichir ses savoirs.",
-      "info2": "Les enseignants peuvent attribuer des badges numériques spécifiques (Open Badges Factory).",
-      "repo": "https://github.com/call-learning/H5P.SoftSkills.H5P"
-    },
-    {
-      "img": "compet-vet-suivi.jpg",
-      "title": "CompetVetSuivi – Suivi des compétences",
-      "info": "Un outil Moodle permettant de suivre la progression des étudiants vétérinaires au fil des années, grâce à une matrice de compétences croisée avec les UE/UC.",
-      "info2": "Un bloc Moodle permet à chaque étudiant de visualiser sa progression en temps réel.",
-      "repo": "https://github.com/call-learning/moodle-local_competvetsuivi"
-    },
-    {
-      "img": "compet-vet-eval.jpg",
-      "title": "CompetVetEval – Évaluation clinique",
-      "info": "Un module Moodle et une application mobile pour faciliter la collecte d’observations cliniques par les enseignants et produire des synthèses régulières des compétences acquises.",
-      "info2": "Développé avec Ionic et connecté à Moodle via webservices.",
-      "repo": "https://github.com/call-learning/competVetEval"
-    },
-    {
-      "img": "savoir-ensam.jpg",
-      "title": "Thème Moodle – Arts et Métiers (ENSAM)",
-      "info": "Un thème repensé pour simplifier l’expérience utilisateur et rendre l’accès aux ressources plus agréable.",
-      "info2": "Basé sur Boost, avec catalogue en libre accès et tableau de bord adapté aux enseignants et étudiants.",
-      "url": "https://savoir.ensam.eu/moodle/",
-      "repo": "https://github.com/call-learning/moodle-theme_savoir"
-    }
-  ],
+
   "contact": {
     "email": "contact@call-learning.fr",
     "phone": "+33 4 00 00 00 00",
     "cta": "Discutons de votre projet Moodle™ ou Open edX™ dès aujourd’hui !"
   },
+
   "footer": {
     "networks": [
-      {
-        "name": "linkedin",
-        "url": "https://www.linkedin.com/company/call-learning/"
-      },
       {
         "name": "github",
         "url": "https://github.com/call-learning"

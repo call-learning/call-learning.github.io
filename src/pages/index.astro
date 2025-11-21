@@ -1,9 +1,11 @@
 ---
-import data from '../content/data.json';
+import generalData from '../content/data.json';
+import projectData from '../content/projets.json';
 import Nav from '../components/Nav.astro';
 import Section from '../components/Section.astro';
 import Footer from '../components/Footer.astro';
-const { hero = {}, about = {}, projects = [], contact = {}, footer = {} } = data;
+const { hero = {}, about = {}, contact = {}, footer = {} } = generalData;
+const { projects = [] } = projectData;
 ---
 <html lang="fr" id="top">
   <head>
@@ -20,7 +22,7 @@ const { hero = {}, about = {}, projects = [], contact = {}, footer = {} } = data
 
     <div class="header-logo-full">
       <div class="header-logo-full-bg">
-        <img src="/images/logo.png" alt="CALL Learning Logo" class="header-logo-full-img" />
+        <img src="/images/logo.png" alt="CALL Learning Logo" />
         <div class="header-logo-full-title">
           <div>{hero.generaltitle}</div>
           <div class="header-logo-full-subtitle">{hero.generalsubtitle}</div>
@@ -29,22 +31,26 @@ const { hero = {}, about = {}, projects = [], contact = {}, footer = {} } = data
       </div>
     </div>
 
-    <header class="hero">
-      <div class="container" style="display:grid; grid-template-columns: 1.2fr .8fr; gap:2rem; align-items:center;">
-        <div>
+    <header class="hero hero-full">
+      <div class="hero-center" style="width:100vw; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <div style="max-width:700px; width:100%; text-align:center;">
           <h1>{hero.title || hero.name || 'CALL Learning <dot> IO'}</h1>
           {hero.subtitle && <p class="lead">{hero.subtitle}</p>}
-          <div style="display:flex; gap:.75rem; flex-wrap:wrap">
+          <div style="display:flex; gap:.75rem; flex-wrap:wrap; justify-content:center;">
             <a class="btn primary" href={hero.cta?.url || '#contact'}>{hero.cta?.label || 'Contact'}</a>
             <a class="btn secondary" href="#projects">Voir les projets</a>
           </div>
         </div>
-        {about.img && <img src={`/images/${about.img}`} alt="Mascotte" class="doggo" />}
       </div>
     </header>
 
     <Section id="about" title="À propos">
-      {about.description && <p set:html={about.description} />}
+      <div style="position:relative; display:flex; align-items:center; max-width:800px; margin:0 auto;">
+        <div style="flex:1; padding-right:140px;">
+          {about.description && <p set:html={about.description} />}
+        </div>
+        {about.img && <img src={`/images/${about.img}`} alt="Mascotte" class="doggo" style="position:absolute; right:-120px; top:50%; transform:translateY(-50%); max-height:220px; z-index:2;" />}
+      </div>
     </Section>
 
     <Section id="projects" title="Nos projets">
@@ -74,12 +80,8 @@ const { hero = {}, about = {}, projects = [], contact = {}, footer = {} } = data
           <img src="/images/logo.png" alt="CALL Learning Logo" />
         </div>
         <p class="contact-lead">Envie d'échanger sur un projet, une idée ou simplement en savoir plus&nbsp;? Nous répondrons rapidement&nbsp;!</p>
-        <div style="display:flex; justify-content:center; margin:2rem 0;">
-          <a class="btn primary contact-btn" href="mailto:contact@call-learning.io">Envoyer un email</a>
-        </div>
         <div class="contact-links">
-          <a href="mailto:contact@call-learning.io" class="contact-link"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#6366f1" stroke-width="2" d="M4 4h16v16H4V4zm0 0l8 8 8-8"/></svg> contact@call-learning.io</a>
-          <a href="https://www.linkedin.com/in/laurentd" target="_blank" rel="noopener" class="contact-link"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#6366f1" stroke-width="2" d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-6a6 6 0 0 1 6-6z"/><circle cx="6" cy="6" r="3" stroke="#6366f1" stroke-width="2"/></svg> LinkedIn</a>
+          <a href="mailto:{contact.email}" class="contact-link"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#6366f1" stroke-width="2" d="M4 4h16v16H4V4zm0 0l8 8 8-8"/></svg> {contact.email}</a>
         </div>
       </div>
     </Section>

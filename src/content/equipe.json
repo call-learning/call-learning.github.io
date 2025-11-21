@@ -1,0 +1,26 @@
+{
+  "title": "L’équipe CALL Learning",
+  "intro": "CALL Learning, c’est une équipe très spécialisée autour de Moodle™, Totara, Open edX et des infrastructures Cloud. Nous combinons développement, DevOps, UX / design et pilotage technique pour créer des plateformes stables, performantes et agréables à utiliser.",
+  "members": [
+    {
+      "name": "Laurent",
+      "role": "Ingénierie système & responsable technique",
+      "bio": "Laurent pilote la vision technique des projets et intervient sur l’architecture et le développement Moodle. Il conçoit les architectures (mono-serveur, multi-frontaux, load-balancing, Redis…), développe et maintient les plugins et thèmes, optimise les performances et anime les ateliers de prise en main. Il travaille depuis plus de 10 ans pour des institutions comme l’ENVA, l’IMT, le CNAM, FUN-MOOC ou la British Computer Society."
+    },
+    {
+      "name": "Alexandre",
+      "role": "Infrastructure, DevOps & Cloud",
+      "bio": "Alexandre garantit la stabilité et la scalabilité des plateformes. Il automatise les déploiements (Ansible, CI/CD, GitOps), met en place une supervision avancée (Prometheus, Grafana), renforce la sécurité (Wazuh / OSSEC) et optimise Redis, MariaDB, PHP-FPM et NGINX. Il gère notamment l’infrastructure du Concours Vétérinaire Post-Bac depuis 2020 et a accompagné plusieurs projets pour l’AUF."
+    },
+    {
+      "name": "Bas",
+      "role": "Développeur Moodle senior",
+      "bio": "Bas est un expert historique de Moodle, ancien développeur chez Moodle HQ. Il maîtrise le développement de plugins, thèmes et API. Il contribue aux évolutions du coeur de Moodle et spécifiquement sur les aspect graphiques et Web Design. Il travaille notamment sur les projets CompetVet pour les écoles vétérinaires."
+    },
+    {
+      "name": "Clément",
+      "role": "UX / UI & design",
+      "bio": "Clément s’assure que les plateformes sont claires, agréables et simples à utiliser pour étudiants et enseignants. Il analyse les parcours utilisateurs, conçoit des thèmes modernes et accessibles, améliore l’ergonomie sans casser le fonctionnel et adapte le design aux usages pédagogiques. Il a piloté la refonte graphique des plateformes ENSAM, VetAgro Sup, IMT et du site WordPress du Concours Vétérinaire Post-Bac."
+    }
+  ]
+}

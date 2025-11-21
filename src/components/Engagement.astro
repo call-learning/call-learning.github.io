@@ -1,0 +1,13 @@
+---
+const { id = "", title = "" } = Astro.props;
+---
+<section id={id} class="engagement">
+  <div class="container">
+    <h2>{title}</h2>
+    <slot />
+  </div>
+</section>
+<style>
+.engagement { }
+.engagement h2 { margin-top:0; letter-spacing:.4px; }
+</style>
