@@ -22,7 +22,7 @@ const { projects = [] } = projectData;
 
     <div class="header-logo-full">
       <div class="header-logo-full-bg">
-        <img src="/images/logo.png" alt="CALL Learning Logo" />
+        <img src="/images/logo.png" alt="CALL Learning Logo" class="logo" />
         <div class="header-logo-full-title">
           <div>{hero.generaltitle}</div>
           <div class="header-logo-full-subtitle">{hero.generalsubtitle}</div>
@@ -45,11 +45,18 @@ const { projects = [] } = projectData;
     </header>
 
     <Section id="about" title="À propos">
-      <div style="position:relative; display:flex; align-items:center; max-width:800px; margin:0 auto;">
-        <div style="flex:1; padding-right:140px;">
+      <div class="about-inner">
+        <div class="about-text">
           {about.description && <p set:html={about.description} />}
         </div>
-        {about.img && <img src={`/images/${about.img}`} alt="Mascotte" class="doggo" style="position:absolute; right:-120px; top:50%; transform:translateY(-50%); max-height:220px; z-index:2;" />}
+
+        {about.img && (
+          <img
+            src={`/images/${about.img}`}
+            alt="Logo"
+            class="about-img"
+          />
+        )}
       </div>
     </Section>
 

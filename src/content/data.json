@@ -14,7 +14,7 @@
   "about": {
     "description": "CALL Learning réunit une équipe d’experts qui conçoivent, développent et opèrent des plateformes d’apprentissage Open Source (Moodle™, Open edX™).<br>Nous utilisons au quotidien les solutions que nous déployons, ce qui garantit une approche pragmatique, une exigence élevée en qualité logicielle et une capacité d’amélioration continue.<br>Nous accompagnons déjà des institutions telles que l’ENVA, l’IMT ou les Arts et Métiers, avec des solutions éprouvées, sécurisées et évolutives.<br>Notre engagement : transformer vos enjeux pédagogiques et techniques en solutions opérationnelles, fiables et durables.",
     "resume": "De l’expression du besoin au déploiement clé-en-main, nous vous accompagnons sur la conception pédagogique, le développement spécifique, l’hébergement, l’optimisation des performances et le maintien en conditions opérationnelles.",
-    "img": "dog.png"
+    "img": "iconesartisans.png"
   },
 
   "contact": {
@@ -26,7 +26,7 @@
   "footer": {
     "networks": [
       {
-        "name": "github",
+        "name": "Github",
         "url": "https://github.com/call-learning"
       }
     ]

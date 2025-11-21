@@ -16,13 +16,6 @@
       "repo": "https://github.com/call-learning/moodle-theme_enva"
     },
     {
-      "img": "cveto-projet.jpg",
-      "title": "Concours Vétérinaire Post-bac 2024 – Moodle",
-      "info": "Développement d’une plateforme nationale intégrant pages statiques, contenus officiels et questionnaires Parcoursup.",
-      "url": "https://exams.concours-veto-postbac.fr/",
-      "repo": "https://github.com/call-learning/moodle-theme_envf"
-    },
-    {
       "img": "cveto-projet-wordpress.jpg",
       "title": "Concours Vétérinaire Post-bac 2024 – WordPress",
       "info": "Un site vitrine informatif et administrable, destiné à guider efficacement les candidats et leurs familles.",
@@ -31,9 +24,10 @@
     {
       "img": "cveto-projet-moodle.png",
       "title": "Exams – Concours Vétérinaire Post-bac 2022 – Moodle",
-      "info": "Plateforme d’examen basée sur Moodle et adossée à une infrastructure Kubernetes redondée, optimisée pour un trafic national et des contraintes métier fortes.",
+      "info": "Développement d’une plateforme nationale intégrant pages statiques, contenus officiels et questionnaires Parcoursup. Plateforme adossée à une infrastructure Kubernetes redondée, optimisée pour un trafic national et des contraintes métier fortes.",
       "info2": "Architecture multi-frontaux avec équilibrage de charge, Redis pour le cache applicatif et les sessions, supervision avancée et procédures pour garantir la continuité de service pendant les épreuves.",
-      "url": "https://exam.concours-veto-postbac.fr/"
+      "url": "https://exam.concours-veto-postbac.fr/",
+      "repo": "https://github.com/call-learning/moodle-theme_envf"
     },
     {
       "img": "cveto-projet-questionnaire.jpg",
