@@ -16,6 +16,7 @@ const { projects = [] } = projectData;
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="theme-color" content="#4f46e5" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
   <body>
     <Nav />
@@ -88,7 +89,7 @@ const { projects = [] } = projectData;
         </div>
         <p class="contact-lead">Envie d'échanger sur un projet, une idée ou simplement en savoir plus&nbsp;? Nous répondrons rapidement&nbsp;!</p>
         <div class="contact-links">
-          <a href="mailto:{contact.email}" class="contact-link"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path stroke="#6366f1" stroke-width="2" d="M4 4h16v16H4V4zm0 0l8 8 8-8"/></svg> {contact.email}</a>
+          <a href="mailto:{contact.email}" class="contact-link"><i class="fa-solid fa-envelope"/>{contact.email}</a>
         </div>
       </div>
     </Section>

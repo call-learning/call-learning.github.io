@@ -19,16 +19,14 @@
 
   "contact": {
     "email": "contact@call-learning.fr",
-    "phone": "+33 4 00 00 00 00",
+    "phone": "+33 4 42 81 26 55",
     "cta": "Discutons de votre projet Moodle™ ou Open edX™ dès aujourd’hui !"
   },
 
   "footer": {
-    "networks": [
-      {
-        "name": "Github",
-        "url": "https://github.com/call-learning"
-      }
-    ]
+    "address": "CALL Learning – 614 Chemin de Marseille, 13880 Velaux, France",
+    "phone": "+33 4 42 81 26 55",
+    "email": "contact@call-learning.fr",
+    "siret": "835 114 372 00039"
   }
 }
